@@ -19,7 +19,7 @@ RUN chmod g+rwx /opt/tomcat/conf
 RUN chmod g+r /opt/tomcat/conf/*
 #RUN chown -R tomcat /opt/tomcat/logs/ /opt/tomcat/temp/ /opt/tomcat/webapps/ /opt/tomcat/work/
 RUN chgrp -R tomcat /opt/tomcat/bin
-RUN chgrp -R tomcat /opt/tomcat/lib
+#RUN chgrp -R tomcat /opt/tomcat/lib
 RUN chmod g+rwx /opt/tomcat/bin
 RUN chmod g+r /opt/tomcat/bin/*
 
