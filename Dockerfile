@@ -17,7 +17,7 @@ RUN tar -zxvf apache-tomcat-8.5.77-src.tar.gz -C /opt/tomcat --strip-components=
 RUN chgrp -R tomcat /opt/tomcat/conf
 RUN chmod g+rwx /opt/tomcat/conf
 RUN chmod g+r /opt/tomcat/conf/*
-RUN chown -R tomcat /opt/tomcat/logs/ /opt/tomcat/temp/ /opt/tomcat/webapps/ /opt/tomcat/work/
+#RUN chown -R tomcat /opt/tomcat/logs/ /opt/tomcat/temp/ /opt/tomcat/webapps/ /opt/tomcat/work/
 RUN chgrp -R tomcat /opt/tomcat/bin
 RUN chgrp -R tomcat /opt/tomcat/lib
 RUN chmod g+rwx /opt/tomcat/bin
